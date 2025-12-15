@@ -2,7 +2,7 @@
 
 # ====== CONFIG ======
 CHARTS_SERVICE_URL="${CHARTS_SERVICE_URL:-http://127.0.0.1:8000}"
-CHARTS_SERVICE_TOKEN="abc"
+CHARTS_SERVICE_TOKEN="${CHARTS_SERVICE_TOKEN:?Missing CHARTS_SERVICE_TOKEN}"
 
 URL_OVERRIDE="$1"                 # optional: custom url
 HIRING_GROUP_ID="$2"              # required
